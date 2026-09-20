@@ -13,10 +13,18 @@ function completedTask(btnId, message) {
 
     alert("Task completed successfully");
 
-    const Activity = document.createElement('p');
-    Activity.textContent = message;
-    document.getElementById('activity').appendChild(Activity);
-    Activity.classList.add('m-4','bg-[rgb(55,82,253,10%)]','text-[16px]', 'rounded-lg','min-h-[68px]','p-2')
+    const Activity = document.createElement("p");
+    const time = new Date().toLocaleTimeString();
+    Activity.textContent = `${message} at ${time}`;
+    document.getElementById("activity").appendChild(Activity);
+    Activity.classList.add(
+      "m-4",
+      "bg-[rgb(55,82,253,10%)]",
+      "text-[16px]",
+      "rounded-lg",
+      "min-h-[68px]",
+      "p-2",
+    );
   });
 }
 
