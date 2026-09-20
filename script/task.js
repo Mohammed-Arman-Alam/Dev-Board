@@ -3,7 +3,7 @@ document.getElementById('task-btn1').addEventListener('click',function(){
     const btn1 = document.getElementById('task-btn1');
     const taskLeft = document.getElementById('task-count').innerText;
     const totalTask = document.getElementById('total-task').innerText;
-    btn1.style.backgroundColor = '3752FD,30%';
+    btn1.style.backgroundColor = '375200,30%';
     btn1.disabled = true;
     const availabeTask = parseInt(taskLeft)-1;
     const totalDone = parseInt(totalTask)+1;
